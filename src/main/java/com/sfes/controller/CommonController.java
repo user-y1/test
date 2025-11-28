@@ -13,7 +13,6 @@ public class CommonController {
     @PostMapping("/file")
     public String upload(MultipartFile file){
         System.out.println(file);
-        int a = 1;//测试
         return "123";
     }
 }
