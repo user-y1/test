@@ -22,4 +22,10 @@ public class CommonController {
     public String test(){
         return "hello world";
     }
+
+    @GetMapping()
+    public String test1(){
+        return "hello world";
+    }
+
 }
