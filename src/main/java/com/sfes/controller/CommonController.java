@@ -1,6 +1,7 @@
 package com.sfes.controller;
 
 import jakarta.annotation.Resource;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,5 +16,10 @@ public class CommonController {
         System.out.println(file);
         int a = 1;//测试
         return "123";
+    }
+
+    @GetMapping()
+    public String test(){
+        return "hello world";
     }
 }
